@@ -1,117 +1,71 @@
-1. //Leia o código abaixo
-    
-  //  function minhaFuncao(variavel) {
-    //	return variavel * 5
-    //}
-    
-    //console.log(minhaFuncao(2));
-    //console.log(minhaFuncao(10));
-    
-    
-    //a) O que vai ser impresso no console?
-    //console.log(minhaFuncao(2)) //Retorna resultado 10;
-    //console.log(minhaFuncao(10))//Retorna resultado 50;
-    
-    //b) O que aconteceria se retirasse os dois `console.log` e simplesmente invocasse a função `minhaFuncao(2)` e `minhaFuncao(10)`? O que apareceria no console?*/
-    // Não retorna nada no console, mas a function constinua funcionando;
+//1.Escreva as funções explicadas abaixo:
+//a) A função não deve receber nenhum parâmetro e deve imprimir uma mensagem falando algumas informações sobre você, como: 
+//"Eu sou Caio, tenho 23 anos, moro em São Paulo e sou estudante."
 
-    //2. Leia o código abaixo
-    
-    //let textoDoUsuario = prompt("Insira um texto");
-    
-    //const outraFuncao = function(texto) {
-    //	return texto.toLowerCase().includes("cenoura")
-    //}
-    
-    //const resposta = outraFuncao(textoDoUsuario)
-    //console.log(resposta)
-    
-    //a. Explique o que essa função faz e qual é sua utilidade
-    //Essa função faz com que o texto digitado pelo usuário esteja com todas as letras minúsculas, e verifica se "cenoura" esta no texto.
-    
-    //b. Determine qual será a saída no console para cada uma das 3 entradas do usuário:
-         //i.   `Eu gosto de cenoura` = Retona true no console;
-         //ii.  `CENOURA é bom pra vista` = Retona true no console;
-         //iii. `Cenouras crescem na terra` = Retona true no console.
+/*function infoUser() {
+    alert("Eu sou Felipe, tenho 28 anos, moro em São Leopoldo e sou estudante de javascript.");
+}
 
-
-         
-
-  //1.Escreva as funções explicadas abaixo:
-  //a) A função não deve receber nenhum parâmetro e deve imprimir uma mensagem falando algumas informações sobre você, como: 
-  //"Eu sou Caio, tenho 23 anos, moro em São Paulo e sou estudante."
-  //Troque o nome, idade, cidade e se é estudante ou não por informações sobre você. Lembrando que a função não possui entradas, apenas imprime essa mensagem.
-
-  //function infoUser(){
-  //  console.log("Eu sou Felipe, tenho 28 anos, moro em São Leopoldo e sou estudante.");
-  //}
-    
-
-
-  //b) Agora escreva uma função que receba 4 parâmetros que correspondem às informações de uma pessoa: o nome (string), a idade (number), a cidade (string) e 
-  //uma profissão (string). Ela deve retornar uma string que unifique todas as informações da pessoa em uma só mensagem com o template:
-  //Eu sou [NOME], tenho [IDADE] anos, moro em [ENDEREÇO] e sou [PROFISSÃO].
-
-    //function infoUser(nome, idade, endereço, profissão){
-    //   console.log("Eu sou " + nome + ", tenho " + idade + " anos" + ", moro em " + endereço + " e sou " + profissão + ".");
-//}
-
-//infoUser(prompt("Digite seu nome:"), prompt("Digite sua idade: "), prompt("Digite seu endereço: "), prompt("Digite sua profissão: "));
+alert(infoUser());*/
 
 
 
+//b) Agora escreva uma função que receba 4 parâmetros que correspondem às informações de uma pessoa: o nome (string), a idade (number), a cidade (string) e uma profissão (string). 
+//Ela deve retornar uma string que unifique todas as informações da pessoa em uma só mensagem com o template:
+//Eu sou [NOME], tenho [IDADE] anos, moro em [ENDEREÇO] e sou [PROFISSÃO].
 
-//2. Escreva as funções explicadas abaixo:
+/*function infoUser() {
+    nome = prompt("Qual é seu primeiro nome?");
+    idade = prompt("Qual a sua idade?");
+    endereço = prompt("Qual é seu endereço?");
+    profissao = prompt("Qual é a sua profissão?");
+    return ["Eu sou " + nome + ", tenho " + idade + " anos, moro em " + endereço + " e sou " + profissao + "."]
+}
+
+alert(infoUser());*/
+
+
+
+//2.Escreva as funções explicadas abaixo:
 //a) Escreva uma função que receba 2 números como parâmetros, e, dentro da função, faça a soma das duas entradas e retorne o resultado. Invoque a função e imprima no console o resultado.
 
-//function numeros(num1, num2){
-//   return num1 + num2
-//}
+/*function soma(num1, num2) {
+    resultado = num1 + num2;
+    return resultado;
+}
 
-//let resultado = numeros(5,10);
-//console.log(resultado);
-
-//ou pode ser feito sem declaração de nova variavel.
-//console.log(numeros(5,10));
-
-
-
+console.log(soma(10, 5));*/
 
 //b) Faça uma função que recebe 2 números e retorne um booleano que informa se o primeiro número é maior ou igual ao segundo.
 
-//function numeros(num1, num2){
-//    return num1 >= num2
-//}
+/*function compara(num1, num2) {
+    return num1 >= num2;
+}
 
-//console.log(numeros(2, 5));
+console.log(compara(2, 1));
+console.log(compara(0, 1));*/
 
+//c) Escreva uma função que receba um número e devolva um booleano indicando se ele é par ou não.
 
+/*function par(num1) {
+    return num1 % 2 === 0 
+}
 
-
-//c) Escreva uma função que receba um número e devolva um booleano indicando se ele é par ou não
-
-//function number(num1){
-//    return num1%2 === 0
-//}
-
-//console.log(number(10));
-
+console.log(par(2));
+console.log(par(1));*/
 
 //d) Faça uma função que recebe uma mensagem (string) como parâmetro e imprima o tamanho dessa mensagem, juntamente com uma versão dela em letras maiúsculas.
 
-//function mensagem(texto){
-//   tamanho = texto.length
-//   maiusculo = texto.toUpperCase()
-//    return tamanho + ", " + maiusculo
-//}
+/*function mensagem(texto) {
+    texto = prompt("Deixe sua mensagem: ");
+    return texto.toUpperCase() + texto.length;
+}
 
-//console.log(mensagem(prompt("Digite uma mensagem: ")));
-
+console.log(mensagem());*/
 
 
 
-//3.Crie uma função para cada uma das operações básicas (soma, subtração, multiplicação e divisão). 
-//Em seguida, peça para o usuário inserir dois números e chame essas 4 funções com esses valores inputados pelo usuário sendo o argumento. 
+//3. Crie uma função para cada uma das operações básicas (soma, subtração, multiplicação e divisão). Em seguida, peça para o usuário inserir dois números e chame essas 4 funções com esses valores inputados pelo usuário sendo o argumento. 
 //Por fim, mostre no console o resultado das operações:
 
 //Números inseridos: 30 e 3
@@ -120,3 +74,68 @@
 //Multiplicação: 90
 //Divisão: 10
 
+/*function somar(num1, num2) {
+    return parseFloat(num1) + parseFloat(num2);
+}
+
+function subtrair(num3, num4) {
+    return num3 - num4;
+}
+
+function multiplicar(num5, num6) {
+    return num5 * num6;
+}
+
+function dividir(num7, num8) {
+    return num7 / num8;
+}
+
+let valor1 = prompt("insira o primeiro número por favor: ");
+let valor2 = prompt("insira o segundo número por favor: ");
+
+console.log(somar(valor1, valor2));
+console.log(subtrair(valor1, valor2));
+console.log(multiplicar(valor1, valor2));
+console.log(dividir(valor1, valor2));*/
+
+
+
+//Desafios:
+
+//1. Funções são trechos de códigos como quaisquer outros mas que podemos acessá-los mais de uma vez ao longo do código através de invocações/chamadas. 
+//Então, funções podem chamar/invocar outras funções também. Sua tarefa é escrever duas funções
+//a) Escreva uma arrow function que recebe um parâmetro e imprime no console esse parâmetro
+//b) Escreva outra arrow function que recebe dois valores como parâmetros mas nenhum retorno. 
+//Faça a soma entre esses valores e chame a sua primeira função mandando este resultado da soma como entrada para imprimi-lo
+
+/*const parametro1 = (valor1) => {
+    return valor1;
+}
+
+console.log(parametro1(15));
+
+
+const parametro2 = (valor2, valor3) => {
+    valor2 = prompt("Digite um número: ");
+    valor3 = prompt("Digite outro número: ");
+    resultado = parseFloat(valor2) + parseFloat(valor3);
+    return parametro1(resultado);
+}
+
+console.log(parametro2());*/
+
+//Forma correta.
+/*const imprimirparametro = (valor1) => {
+    console.log(valor1);
+    }
+
+const somaParametro = (valor2, valor3) => {
+    let resultado = valor2 + valor3;
+    imprimirparametro(resultado);
+        }
+
+somaParametro(12,13);*/
+
+
+
+//2. Faça uma função que execute o teorema de Pitágoras, recebendo dois catetos e calculando o valor da hipotenusa. Retorne este valor, invoque a função e imprima o resultado no console.
