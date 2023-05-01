@@ -139,3 +139,16 @@ somaParametro(12,13);*/
 
 
 //2. Faça uma função que execute o teorema de Pitágoras, recebendo dois catetos e calculando o valor da hipotenusa. Retorne este valor, invoque a função e imprima o resultado no console.
+// Dica: A fórmula do teorema é: hip² = a² + b² , onde hip é a hipotenusa e a e b são os catetos. 
+//É necessário isolar a hipotenusa, então ao final temos: hip = √(a² + b²)
+
+/*function teorema(cat1, cat2) {
+    const hipotenusa = Math.sqrt(cat1 ** 2 + cat2 ** 2);
+    return hipotenusa;
+} 
+
+let cat3 = prompt("Digite o valor do primeiro cateto: ");
+let cat4 = prompt("Digite o valor do segundo cateto: ");
+
+const resultado = teorema(cat3, cat4);
+console.log("O valor da hipotenusa é: " + resultado);*/
